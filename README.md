@@ -44,20 +44,6 @@ Dự án xử lý tuần tự qua các bước trong Notebook:
 
 6. Lưu kết quả: Xuất toàn bộ dữ liệu có cấu trúc ra file output/table.json.
 
-## 💻 Hướng dẫn sử dụng
-1. Đảm bảo đường dẫn tới tệp tài liệu PDF của bạn được cấu hình chính xác trong mã nguồn:
-pdf_path = "đường_dẫn_đến_file_AFP-GOCA-Reference.pdf"
-Chạy toàn bộ các ô lệnh (cells) trong Jupyter Notebook.
-
-Kết quả sẽ được lưu tại: output/table.json dưới định dạng:
-{
-    "Tên lệnh / Ý nghĩa": {
-        "Tag": "Tên tag (ví dụ: GBAR)",
-        "Code": "Mã hex (ví dụ: C1)",
-        "Length": "Độ dài dữ liệu",
-        "Description": "Chi tiết mô tả chức năng của lệnh..."
-    }
-}
 ## 📚 Công nghệ sử dụng
 Docling - Bộ parser tài liệu thế hệ mới từ IBM.
 
