@@ -1,0 +1,320 @@
+{
+    "Begin Area": {
+        "Tag": "GBAR",
+        "Code": "68",
+        "Length": "1",
+        "Description": "This order indicates the start of a set of primitives that define an area boundary."
+    },
+    "Begin Custom Pattern": {
+        "Tag": "GBCP",
+        "Code": "DE",
+        "Length": "13",
+        "Description": "This order indicates the start of a set of primitives that define a custom pattern."
+    },
+    "Begin Image at Given Position": {
+        "Tag": "GBIMG",
+        "Code": "D1",
+        "Length": "10",
+        "Description": "These orders identify the start of an image definition at a given position or at the current position."
+    },
+    "Begin Image at Current Position": {
+        "Tag": "GCBIMG",
+        "Code": "91",
+        "Length": "6",
+        "Description": "These orders identify the start of an image definition at a given position or at the current position."
+    },
+    "Box at Given Position": {
+        "Tag": "GBOX",
+        "Code": "C0",
+        "Length": "10, 12, 14",
+        "Description": "These orders define a box with square or round corners, drawn with its first corner at a given position or at the current position."
+    },
+    "Box at Current Position": {
+        "Tag": "GCBOX",
+        "Code": "80",
+        "Length": "6, 8, 10",
+        "Description": "These orders define a box with square or round corners, drawn with its first corner at a given position or at the current position."
+    },
+    "Character String at Given Position": {
+        "Tag": "GCHST",
+        "Code": "C3",
+        "Length": "4-255",
+        "Description": "These orders draw a character string at a given position or at the current position."
+    },
+    "Character String at Current Position": {
+        "Tag": "GCCHST",
+        "Code": "83",
+        "Length": "0-255",
+        "Description": "These orders draw a character string at a given position or at the current position."
+    },
+    "Comment": {
+        "Tag": "GCOMT",
+        "Code": "01",
+        "Length": "0-255",
+        "Description": "This order enables data to be stored within a segment."
+    },
+    "Cubic Bezier Curve at Given Position": {
+        "Tag": "GCBEZ",
+        "Code": "E5",
+        "Length": "4- n",
+        "Description": "These orders generate a Cubic Bezier Curve that starts at a given position or at the current position."
+    },
+    "Cubic Bezier Curve at Current Position": {
+        "Tag": "GCCBEZ",
+        "Code": "A5",
+        "Length": "0- n",
+        "Description": "These orders generate a Cubic Bezier Curve that starts at a given position or at the current position."
+    },
+    "Delete Pattern": {
+        "Tag": "GDPT",
+        "Code": "DF",
+        "Length": "3, 4",
+        "Description": "This order deletes a previously defined custom pattern or gradient, or deletes all previously defined custom patterns or gradients in a given pattern set."
+    },
+    "End Area": {
+        "Tag": "GEAR",
+        "Code": "60",
+        "Length": "0-255",
+        "Description": "This order indicates the end of a set of primitives that define an area boundary."
+    },
+    "End Custom Pattern": {
+        "Tag": "GECP",
+        "Code": "5E",
+        "Length": "1",
+        "Description": "This order indicates the end of a set of primitives that define a custom pattern."
+    },
+    "End Image": {
+        "Tag": "GEIMG",
+        "Code": "93",
+        "Length": "0-255",
+        "Description": "This order identifies the end of an image definition."
+    },
+    "End Prolog": {
+        "Tag": "GEPROL",
+        "Code": "3E",
+        "Length": "1",
+        "Description": "This order indicates the end of the prolog of a segment."
+    },
+    "Fillet at Given Position": {
+        "Tag": "GFLT",
+        "Code": "C5",
+        "Length": "4- n",
+        "Description": "These orders draw a curved line tangential to a specified set of straight lines, at the given position or at the current position."
+    },
+    "Fillet at Current Position": {
+        "Tag": "GCFLT",
+        "Code": "85",
+        "Length": "0- n",
+        "Description": "These orders draw a curved line tangential to a specified set of straight lines, at the given position or at the current position."
+    },
+    "Full Arc at Given Position": {
+        "Tag": "GFARC",
+        "Code": "C7",
+        "Length": "6",
+        "Description": "These orders construct a full circle or an ellipse with the center at a specified point or at the current position."
+    },
+    "Full Arc at Current Position": {
+        "Tag": "GCFARC",
+        "Code": "87",
+        "Length": "2",
+        "Description": "These orders construct a full circle or an ellipse with the center at a specified point or at the current position."
+    },
+    "Image Data": {
+        "Tag": "GIMD",
+        "Code": "92",
+        "Length": "0-255",
+        "Description": "This order specifies the raster data for one scan line or row of an image."
+    },
+    "Line at Given Position": {
+        "Tag": "GLINE",
+        "Code": "C1",
+        "Length": "4- n",
+        "Description": "These orders define one or more connected straight lines, drawn from the given position or from the current position."
+    },
+    "Line at Current Position": {
+        "Tag": "GCLINE",
+        "Code": "81",
+        "Length": "0- n",
+        "Description": "These orders define one or more connected straight lines, drawn from the given position or from the current position."
+    },
+    "Marker at Given Position": {
+        "Tag": "GMRK",
+        "Code": "C2",
+        "Length": "4- n",
+        "Description": "These orders draw the current marker symbol at one or more positions starting from the given position or from the current position."
+    },
+    "Marker at Current Position": {
+        "Tag": "GCMRK",
+        "Code": "82",
+        "Length": "0- n",
+        "Description": "These orders draw the current marker symbol at one or more positions starting from the given position or from the current position."
+    },
+    "No-Operation": {
+        "Tag": "GNOP1",
+        "Code": "00",
+        "Length": 1,
+        "Description": "This order is a No-Operation."
+    },
+    "Partial Arc at Given Position": {
+        "Tag": "GPARC",
+        "Code": "E3",
+        "Length": "18",
+        "Description": "These orders draw a line from the given position or the current position to the start of an arc, and then construct a partial arc. The start point of the arc is specified by the start angle, and the length of the arc is specified by the sweep angle."
+    },
+    "Partial Arc at Current Position": {
+        "Tag": "GCPARC",
+        "Code": "A3",
+        "Length": "14",
+        "Description": "These orders draw a line from the given position or the current position to the start of an arc, and then construct a partial arc. The start point of the arc is specified by the start angle, and the length of the arc is specified by the sweep angle."
+    },
+    "Relative Line at Given Position": {
+        "Tag": "GRLINE",
+        "Code": "E1",
+        "Length": "4- n",
+        "Description": "These orders define one or more connected straight lines, at the given position or at the current position. For these drawing orders, the endpoint of each line is specified as an offset from the previous endpoint rather than as an absolute value."
+    },
+    "Relative Line at Current Position": {
+        "Tag": "GCRLINE",
+        "Code": "A1",
+        "Length": "0- n",
+        "Description": "These orders define one or more connected straight lines, at the given position or at the current position. For these drawing orders, the endpoint of each line is specified as an offset from the previous endpoint rather than as an absolute value."
+    },
+    "Segment Characteristics": {
+        "Tag": "GSGCH",
+        "Code": "04",
+        "Length": "0-255",
+        "Description": "This order is processed as a No-Op in AFP GOCA. It is valid only in the prolog of a segment."
+    },
+    "Set Arc Parameters": {
+        "Tag": "GSAP",
+        "Code": "22",
+        "Length": "8",
+        "Description": "This order sets the values of the current arc parameters."
+    },
+    "Set Background Mix": {
+        "Tag": "GSBMX",
+        "Code": "0D",
+        "Length": "1",
+        "Description": "This order provides a shorthand way of setting the following background mix attributes to the same value:"
+    },
+    "Set Character Angle": {
+        "Tag": "GSCA",
+        "Code": "34",
+        "Length": "4",
+        "Description": "This order sets the value of the current character angle attribute."
+    },
+    "Set Character Cell": {
+        "Tag": "GSCC",
+        "Code": "33",
+        "Length": "4, 8",
+        "Description": "This order sets the value of the current character cell-size attribute."
+    },
+    "Set Character Direction": {
+        "Tag": "GSCD",
+        "Code": "3A",
+        "Length": "1",
+        "Description": "This order sets the value of the current character direction attribute."
+    },
+    "Set Character Precision": {
+        "Tag": "GSCR",
+        "Code": "39",
+        "Length": "1",
+        "Description": "This order sets the value of the current character precision attribute."
+    },
+    "Set Character Shear": {
+        "Tag": "GSCH",
+        "Code": "35",
+        "Length": "4",
+        "Description": "This order sets the value of the current character shear attribute. This order is processed as a No-Op in AFP GOCA."
+    },
+    "Set Color": {
+        "Tag": "GSCOL",
+        "Code": "0A",
+        "Length": "1",
+        "Description": "This order provides a shorthand way of setting the following foreground color attributes to the same value:"
+    },
+    "Set Current Position": {
+        "Tag": "GSCP",
+        "Code": "21",
+        "Length": "4",
+        "Description": "This order sets the value of the current position in the Graphics Presentation Space (GPS)."
+    },
+    "Set Custom Line Type": {
+        "Tag": "GSCLT",
+        "Code": "20",
+        "Length": "0- n",
+        "Description": "This order sets the value of the current line type attribute to a custom value."
+    },
+    "Set Extended Color": {
+        "Tag": "GSECOL",
+        "Code": "26",
+        "Length": "2",
+        "Description": "This order provides a shorthand way of setting the following foreground color attributes to the same value:"
+    },
+    "Set Fractional Line Width": {
+        "Tag": "GSFLW",
+        "Code": "11",
+        "Length": "2",
+        "Description": "This order sets the value of the current line width attribute."
+    },
+    "Set Line End": {
+        "Tag": "GSLE",
+        "Code": "1A",
+        "Length": "1",
+        "Description": "This order sets the value of the current line end attribute."
+    },
+    "Set Line Join": {
+        "Tag": "GSLJ",
+        "Code": "1B",
+        "Length": "1",
+        "Description": "This order sets the value of the current line join attribute."
+    },
+    "Set Line Type": {
+        "Tag": "GSLT",
+        "Code": "18",
+        "Length": "1",
+        "Description": "This order sets the value of the current line type attribute to a standard value."
+    },
+    "Set Line Width": {
+        "Tag": "GSLW",
+        "Code": "19",
+        "Length": "1",
+        "Description": "This order sets the value of the current line width attribute."
+    },
+    "Set Marker Cell": {
+        "Tag": "GSMC",
+        "Code": "37",
+        "Length": "4, 6",
+        "Description": "This order sets the value of the current marker cell-size attribute."
+    },
+    "Set Marker Symbol": {
+        "Tag": "GSMT",
+        "Code": "29",
+        "Length": "1",
+        "Description": "This order sets the value of the current marker symbol attribute."
+    },
+    "Set Mix": {
+        "Tag": "GSMX",
+        "Code": "0C",
+        "Length": "1",
+        "Description": "This order provides a shorthand way of setting the following foreground mix attributes to the same value:"
+    },
+    "Set Pattern Reference Point": {
+        "Tag": "GSPRP",
+        "Code": "A0",
+        "Length": "6",
+        "Description": "This order sets the value of the current pattern reference point attribute."
+    },
+    "Set Pattern Symbol": {
+        "Tag": "GSPT",
+        "Code": "28",
+        "Length": "1",
+        "Description": "This order sets the value of the current pattern symbol attribute."
+    },
+    "Set Process Color": {
+        "Tag": "GSPCOL",
+        "Code": "B2",
+        "Length": "12-14",
+        "Description": "This order specifies a process color, highlight color, or named color that sets the following color attributes to the same value:"
+    }
+}
