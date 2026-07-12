@@ -1,4 +1,4 @@
-# AFP-GOCA PDF Table Extractor & Parser
+# PDF Table Extractor & Parser
 
 Dự án này sử dụng công cụ **Docling** (kết hợp OCR Tesseract) để trích xuất dữ liệu, cấu trúc bảng biểu và mô tả kỹ thuật từ tài liệu PDF chuyên ngành **AFP GOCA (Graphics Object Content Architecture)**. Dữ liệu sau khi trích xuất được xử lý tự động bằng **Pandas** và xuất ra định dạng cấu trúc JSON để phục vụ cho các ứng dụng khác (như RAG, Tra cứu, Hệ thống phân tích tài liệu).
 
